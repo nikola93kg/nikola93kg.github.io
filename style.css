@@ -63,7 +63,12 @@ body {
 }
 .profile-img {
     height: 400px;
-    box-shadow: 1px 4px 55px #3498db;
+    box-shadow: 1px -5px 55px -5px #3498db;
+    transition: 0.7s all;
+}
+.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -5px 55px -5px #4d4d4d;
 }
 .nav-bar {
     top: 0;
@@ -183,8 +188,8 @@ body {
     background: #f9f9f9;
     padding: 10px;
     margin-top: 20px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-radius: 5px;
+    transition: 0.7s all;
 }
 .services-box .fa {
     margin: 0px 10px;
@@ -201,17 +206,19 @@ body {
     color: #777;
 }
 .services-box:hover {
-    background: #2F3640;
+    background: #292929fb;
     color: #fff;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
     transition: 0.6s;
     cursor: pointer;
 }
 .services-box:hover p {
     color: #fff;
+    font-weight: 400;
+}
+.services-box a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 .contact {
     padding-top: 50px;
@@ -265,7 +272,7 @@ body {
 }
 .social-container {
     margin-top: 150px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -399,10 +406,16 @@ body {
         margin: 50px auto;
     }
     .services {
-        padding-top: 0;
+        margin-top: 5px;
+    }
+    .services p {
+        font-size: 17px;
     }
     .contact p {
         font-weight: 400;
+    }
+    .skills-bar {
+        margin-bottom: 60px;
     }
 }
 
