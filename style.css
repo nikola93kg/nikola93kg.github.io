@@ -395,6 +395,9 @@ body {
     .resume {
         margin-top: 100px;
     }
+    .about p {
+        text-align: center;
+    }
     .about h3 {
         text-align: center;
         margin-bottom: 20px;
@@ -406,12 +409,16 @@ body {
     }
     .other {
         margin: 50px auto;
+        text-align: center;
     }
     .services {
         margin-top: 5px;
     }
     .services p {
         font-size: 17px;
+    }
+    .services h1 {
+        margin-bottom: 50px;
     }
     .contact p {
         font-weight: 400;
