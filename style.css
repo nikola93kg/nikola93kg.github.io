@@ -379,7 +379,7 @@ body {
     background-color: transparent !important;
 }
 .resume:hover {
-    cursor: url(https://media.tenor.com/images/37d4f3380a08aac004c7ad2a234f04ce/tenor.gif), auto;
+    cursor: wait;
 }
 
 @media(max-width: 768px) {
