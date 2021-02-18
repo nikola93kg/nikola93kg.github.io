@@ -378,7 +378,9 @@ body {
 .baguetteBox-button {
     background-color: transparent !important;
 }
-
+.resume:hover {
+    cursor: url(🙃), auto;
+}
 
 @media(max-width: 768px) {
     body {
