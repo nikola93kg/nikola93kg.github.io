@@ -20,13 +20,24 @@ body {
 .user-box {
   margin: auto;
 }
+@keyframes picShadow {
+  0% {
+    box-shadow: 1px 0px 20px -60px rgba(255, 255, 255, 0.493);
+  }
+
+  100% {
+    box-shadow: 0px 0px 40px -15px rgba(255, 255, 255, 0.637);
+  }
+}
 .user-box img {
   width: 278px;
   height: 278px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 1px 0px 15px rgba(255, 255, 255, 0.493);
-  box-shadow: 0px 0px 40px -20px rgb(255, 0, 0);
+  animation-name: picShadow;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 .user-box h1 {
   color: #fff;
