@@ -396,15 +396,20 @@ body {
   cursor: wait;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   body {
     padding: 0;
   }
   .container.gallery-container {
     border-radius: 0;
   }
+  .user-box img {
+    margin-bottom: 20px;
+  }
   .profile-img {
     margin-bottom: 30px;
+    height: 300px;
+    width: 300px;
   }
   .social-container {
     display: none;
