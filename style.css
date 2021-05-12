@@ -391,25 +391,27 @@ body {
 
 .project_body {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 15, 0.6)),
-    url(img/background2.jpg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 60px 0;
+  margin: 50px auto;
 }
 
 .container.gallery-container {
-  background-color: #fff;
-  color: #35373a;
+  color: #ffffff;
   min-height: 100vh;
-  border-radius: 20px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 14px rgb(255 255 255 / 30%);
 }
 
 .gallery-container h1 {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 50px;
   font-family: "Droid Sans", sans-serif;
   font-weight: bold;
 }
@@ -435,7 +437,7 @@ body {
 
 .tz-gallery .lightbox img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .tz-gallery img {
@@ -471,6 +473,12 @@ body {
 }
 .resume-load a:visited {
   color: #007bff;
+}
+.projectsBackBtn {
+  float: right;
+  padding: 10px;
+  background: none;
+  border: none;
 }
 @media (max-width: 800px) {
   body {
