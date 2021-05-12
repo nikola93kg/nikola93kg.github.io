@@ -9,6 +9,8 @@ body {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 15, 0.6)),
     url(img/background2.jpg);
+  /* background-image: url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
+
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -26,7 +28,7 @@ body {
   }
 
   100% {
-    box-shadow: 0px 0px 40px -15px rgba(255, 255, 255, 0.637);
+    box-shadow: 0px 0px 40px -10px rgba(255, 255, 255, 0.637);
   }
 }
 .user-box img {
@@ -42,26 +44,31 @@ body {
 .user-box h1 {
   color: #fff;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 4px;
+  font-size: 3em;
   margin: 10px;
 }
 .user-box p {
   color: #f00;
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
+
 .scroll-btn {
   bottom: 30px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  /* border: 1px solid #fff; */
+  /* border-top: 1px solid rgba(255, 255, 255, 0.281); */
   padding: 10px 10px 20px;
   border-radius: 30px;
 }
 .scroll-bar i {
   font-size: 35px;
   color: #fff;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 .scroll-bar i:hover {
   color: #888;
@@ -99,18 +106,32 @@ body {
   z-index: 2;
 }
 .navbar {
-  background-color: #000;
+  background-color: #222222;
+  height: 50px;
 }
 .navbar .nav-link {
   transition: 0.6s;
 }
 .navbar .nav-link:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   color: #3498db;
 }
-.navbar-brand img {
+/* .navbar-brand img {
   height: 50px;
+} */
+
+.navLogo p {
+  font-size: 30px;
+  color: #fff;
+  transition: 0.4s ease;
+  color: rgb(52, 152, 219);
+  opacity: 0.9;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0;
+  font-family: "Architects Daughter", cursive;
 }
+
 .nav-bar .fa-bars {
   font-size: 35px;
   color: #fff;
@@ -287,6 +308,13 @@ body {
 .contact .btn .fa {
   margin-right: 10px;
 }
+.fa a {
+  color: #fff;
+  transition: 0.2s ease-in;
+}
+.fa a:hover {
+  text-decoration: none;
+}
 .footer {
   background: #000;
   height: 50px;
@@ -404,9 +432,26 @@ body {
   background-color: transparent !important;
 }
 .timeline:hover {
-  cursor: wait;
+  cursor: default;
 }
-
+.resume-load {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 8px -4px rgb(25 72 114 / 10%),
+    0 2px 3px rgb(97 116 126 / 10%);
+  width: 900px;
+  margin: 100px auto;
+}
+.resume-load h1 {
+  font-size: 2em;
+  font-weight: 400;
+}
+.resume-load h3 a {
+  text-decoration: none;
+  font-weight: 400;
+}
 @media (max-width: 800px) {
   body {
     padding: 0;
@@ -458,5 +503,12 @@ body {
   }
   .skills-bar {
     margin-bottom: 60px;
+  }
+  .navbar {
+    height: auto;
+  }
+  .tz-gallery .row {
+    margin: auto;
+    text-align: center;
   }
 }
