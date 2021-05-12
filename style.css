@@ -7,9 +7,14 @@ body {
 }
 #header {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 15, 0.6)),
-    url(img/background2.jpg);
-  /* background-image: url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 15, 0.6)),
+    url(img/background2.jpg); */
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 
   background-position: center;
   background-size: cover;
@@ -106,11 +111,11 @@ body {
   z-index: 2;
 }
 .navbar {
-  background-color: #222222;
+  background-color: #000000;
   height: 50px;
 }
 .navbar .nav-link {
-  transition: 0.6s;
+  transition: 0.4s;
 }
 .navbar .nav-link:hover {
   transform: scale(1.1);
@@ -121,15 +126,14 @@ body {
 } */
 
 .navLogo p {
-  font-size: 30px;
+  font-size: 1.4em;
   color: #fff;
   transition: 0.4s ease;
   color: rgb(52, 152, 219);
-  opacity: 0.9;
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Sacramento", cursive;
 }
 
 .nav-bar .fa-bars {
@@ -256,10 +260,11 @@ body {
   border-radius: 15px;
   transition: 0.6s;
   cursor: pointer;
+  color: #007bff;
+  font-weight: 400;
 }
 .services-box:hover p {
   color: #fff;
-  font-weight: 400;
 }
 .services-box a:hover {
   color: rgb(255, 255, 255);
@@ -269,8 +274,14 @@ body {
   padding: 50px 0;
 }
 .contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 15, 0.6)),
-    url(img/background2.jpg);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 15, 0.6)),
+    url(img/background2.jpg); */
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -317,13 +328,16 @@ body {
 }
 .footer {
   background: #000;
-  height: 50px;
-  margin-top: 50px;
+  height: 40px;
   color: #fff;
-  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 .footer p {
   font-size: 12px;
+  margin: 0;
 }
 .social-container {
   margin-top: 150px;
@@ -439,10 +453,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 5px 8px -4px rgb(25 72 114 / 10%),
-    0 2px 3px rgb(97 116 126 / 10%);
-  width: 900px;
+  width: auto;
   margin: 100px auto;
+  padding-bottom: 20px;
 }
 .resume-load h1 {
   font-size: 2em;
@@ -451,6 +464,13 @@ body {
 .resume-load h3 a {
   text-decoration: none;
   font-weight: 400;
+  transition: 0.4s all;
+}
+.resume-load .scaleBrt:hover {
+  color: #ff3c00;
+}
+.resume-load a:visited {
+  color: #007bff;
 }
 @media (max-width: 800px) {
   body {
@@ -458,6 +478,19 @@ body {
   }
   .container.gallery-container {
     border-radius: 0;
+  }
+  .about {
+    padding-top: 35px;
+  }
+  .user-box h1 {
+    font-size: 2em;
+    letter-spacing: 2px;
+  }
+  .user-box p {
+    font-size: 24px;
+  }
+  .navbar .navLogo p {
+    font-size: 24px;
   }
   .user-box img {
     margin-bottom: 20px;
@@ -510,5 +543,13 @@ body {
   .tz-gallery .row {
     margin: auto;
     text-align: center;
+  }
+  .resume-load h1 {
+    font-size: 22px;
+    margin: 0 auto;
+  }
+  .resume-load {
+    min-width: 400px;
+    margin: 50px auto;
   }
 }
