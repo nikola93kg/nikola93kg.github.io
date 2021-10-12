@@ -96,7 +96,7 @@ body {
 .separator {
   width: 70%;
   /* padding-bottom: 30px; */
-  opacity: .5;
+  opacity: 0.5;
 }
 .profile-img {
   height: 400px;
@@ -482,7 +482,7 @@ body {
   border: none;
 }
 @media (max-width: 375px) {
-  .social-container {  
+  .social-container {
     display: none;
   }
   /* .social-buttons {
@@ -498,6 +498,7 @@ body {
   }
   .about {
     padding-top: 35px;
+    padding-bottom: 0;
   }
   .user-box h1 {
     font-size: 2em;
@@ -525,6 +526,10 @@ body {
   }
   .social-container {
     max-width: auto;
+  }
+  .social-buttons a {
+    height: 50px;
+    width: 50px;
   }
   .resume {
     margin-top: 50px;
@@ -658,4 +663,3 @@ body {
     --row-height: 200px;
   }
 }
-
