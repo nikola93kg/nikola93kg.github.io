@@ -690,4 +690,11 @@ body {
   }
 }
 
+@media (max-width: 376px) {
+  .social-buttons a {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 
