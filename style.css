@@ -690,17 +690,13 @@ body {
   }
 }
 
-@media (max-width: 396px) {
+@media (min-width: 396px) {
   .social-buttons a {
     height: 50px;
     width: 50px;
   }
 }
-@media (min-width: 375px) {
-  .social-buttons {
-    display: none;
-  }
-}
+
 
 
 
