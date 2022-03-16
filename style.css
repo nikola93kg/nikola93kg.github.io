@@ -696,5 +696,12 @@ body {
     width: 50px;
   }
 }
+@media (min-width: 375px) {
+  .social-buttons a {
+    height: 40px;
+    width: 40px;
+  }
+}
+
 
 
