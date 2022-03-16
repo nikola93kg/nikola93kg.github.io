@@ -690,7 +690,7 @@ body {
   }
 }
 
-@media (min-width: 396px) {
+@media (max-width: 396px) {
   .social-buttons a {
     height: 50px;
     width: 50px;
