@@ -488,6 +488,12 @@ body {
     display: flex;
   } */
 }
+@media (min-width: 376px) {
+  .social-buttons a {
+    height: 50px;
+    width: 50px;
+  }
+}
 
 @media (max-width: 995px) {
   body {
