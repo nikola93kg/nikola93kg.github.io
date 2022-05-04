@@ -631,10 +631,17 @@ body {
   justify-items: center;
   align-items: center;
   justify-content: space-evenly;
+  gap: 10px;
 }
 .project-items div {
   width: 500px;
-  margin: 20px 0;
+  height: 350px;
+  margin: 50px 0;
+}
+.project-items img {
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
 }
 
 .project-items a {
@@ -659,10 +666,7 @@ body {
   margin: 10px 0;
   padding: 0;
 }
-.project-items img {
-  max-width: 500px;
-  object-fit: scale-down;
-}
+
 .margin-top {
   margin-top: 80px;
 }
