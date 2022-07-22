@@ -1,0 +1,80 @@
+.landing-page {
+  height: 100vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.user-container {
+  display: flex;
+  height: 100vh;
+}
+.user-box {
+  margin: auto;
+}
+@keyframes picShadow {
+  0% {
+    box-shadow: 1px 0px 20px -60px rgba(255, 255, 255, 0.493);
+  }
+
+  100% {
+    box-shadow: 0px 0px 40px -10px rgba(255, 255, 255, 0.637);
+  }
+}
+.user-box img {
+  width: 278px;
+  height: 278px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation-name: picShadow;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.user-box h1 {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 4px;
+  font-size: 3em;
+  margin: 10px;
+}
+.user-box p {
+  color: #f00;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.scroll-btn {
+  bottom: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 10px 20px;
+  border-radius: 30px;
+}
+.scroll-bar i {
+  font-size: 35px;
+  color: #fff;
+  transition: 0.4s;
+}
+.scroll-bar i:hover {
+  color: #888;
+}
+.scroll-bar {
+  animation: mover 1s infinite alternate;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}

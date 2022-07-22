@@ -1,0 +1,46 @@
+.services-container {
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+.services-container h1 {
+  margin-bottom: 15px;
+}
+.services-container p {
+  font-size: 1.1rem;
+}
+
+.services-box {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: 0.7s all;
+  min-height: 175px;
+  transition: 0.4s all;
+}
+.services-box a {
+  transition: 0.4s all;
+}
+.services-box a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.services-box .fa {
+  margin: 0px 10px;
+  font-size: 20px;
+}
+.services-box span {
+  margin: 3px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.services-box p {
+  font-size: 15px;
+  margin-top: 20px;
+  color: #777;
+}
+.services-container .row {
+  display: flex;
+  justify-content: center;
+}

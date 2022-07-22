@@ -10,8 +10,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favIco/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="styles/landing-page.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="styles/social-icons.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,13 +37,12 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-N3LTVWZHBP');
     </script>
 </head>
 
 <body>
-    <section id="header">
+    <section id="header" class="landing-page">
         <div class="user-container text-center">
             <div class="user-box">
                 <img src="img/user_img2.jpg" alt="User img">
@@ -49,17 +54,18 @@
             <div class="scroll-bar"><a href="#about"><i class="fa fa-angle-double-down"></i></a></div>
         </div>
     </section>
+
     <section id="user-info">
-        <div class="nav-bar">
+        <div class="navbar-container">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand navLogo" href="#about">
+                <a class="navbar-brand nav-logo" href="#about">
                     <p>nikola93kg</p>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav"
+                    aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbar-nav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#top">Home</a>
@@ -81,47 +87,41 @@
                 </div>
             </nav>
         </div>
-        <div class="about container" id="about">
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <img src="img/user123.jpg" alt="" class="profile-img">
-                </div>
-                <div class="col-md-6">
-                    <h3>Who Am I?</h3>
-                    <p>Frontend Web developer. <br>
-                        Three years of experience in Web development. Two years as a freelancer, and one year in the
-                        company. <br>
-                        Skilled in HTML, CSS, javaScript (ES6) and React.js. <br>
-                        Also skilled in Adobe Photoshop, Adobe Lightroom, and Adobe Xd. <br>
-                        Graduated from the University of Belgrade.</p>
-                    <div class="skills-bar">
-                        <h3>Languages and frameworks</h3>
-                        <ul>
-                            <div class="sk-first-row">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Wordpress</li>
-                                <li>SASS</li>
-                                <li>JSF</li>
-                                <li>Primefaces</li>
-                            </div>
-                            <div class="sk-second-row">
-                                <li>javaScript</li>
-                                <li>React.js</li>
-                                <li>jQuery</li>
-                                <li>AJAX</li>
-                                <li>MySQL</li>
-                                <li>PHP</li>
-                            </div>
-                        </ul>
-                    </div>
 
+        <div class="about-container container" id="about">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="about-info">
+                        <h1>Who Am I?</h1>
+                        <p>Frontend Web developer. <br>
+                            Three years of experience in Web development. <br>
+                            Skilled in HTML, CSS, javaScript (ES6) and React.js. <br>
+                            Also skilled in Adobe Photoshop, Adobe Lightroom, and Adobe Xd. <br>
+                            Graduated from the University of Belgrade.</p>
+                    </div>
+                    <div class="skills-section">
+                        <h3>Languages and frameworks</h3>
+                        <div class="skills-languages">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="html5">
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="css3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt="sass">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="bootstrap">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="javaScript">
+                            <img src="https://openjsf.org/wp-content/uploads/sites/84/2019/10/jquery-logo-vertical_large_square.png"
+                                alt="jquery">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="react">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174881.png" alt="wordpress">
+                            <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="php">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
         <hr class="separator">
-        <div class="services" id="services">
-            <div class="container">
+
+        <div class="services-container" id="services">
+            <div class="services-content container">
                 <h1 class="text-center">My Offered Services</h1>
                 <p class="text-center">Front-end development and Graphics <br>
                     Clean and readable code.
@@ -147,7 +147,9 @@
                 </div>
             </div>
         </div>
+
         <div class="social-container">
+            <h1>Social media</h1>
             <div class="social-buttons">
                 <a href="https://www.facebook.com/14nikola14" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://twitter.com/14nikola14" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -156,6 +158,7 @@
                 <a href="https://linkedin.com/in/nikola93kg" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
+
         <div class="resume" id="resume">
             <div class="container">
                 <div class="row">
@@ -209,8 +212,8 @@
                                 <h4 class="text-center"><span>Other/Hobbies </span></h4>
                                 <p>Speaking of hobbies, I have many of them's, but the hobby I love the most is playing
                                     the keyboards. Also, I play guitar and flute. In music school Stanislav Binicki I
-                                    improved my piano skills and singing. In my free time, I'm going to the gym, watch
-                                    football, play video games, etc. <br>
+                                    improved my piano skills and singing. In my free time, I'm going to the gym, watch
+                                    football, play video games, etc. <br>
                                 </p>
                             </li>
                         </div>
@@ -220,13 +223,13 @@
                         <h3 class="text-center">My Education</h3>
                         <ul class="timeline">
                             <li>
-                                <h4><span>2018 - </span> PHP Web Developer</h4>
+                                <h4><span>2018 - </span>Web Developer</h4>
                                 <p>In this course, I became a full-stack web developer. Journey became with HTML 5,
                                     CSS3, jS, jQuery, and AJAX. Then it continues with MYSQL, PHP7 with object-oriented
                                     programming with secure and clean code. My last project includes a message system
                                     which you can see when you click <a
                                         href="https://github.com/nikola93kg/message_system" target="_blank">here</a>
-                                    on my GitHub profile. <br>
+                                    on my GitHub profile. <br>
                                     <b>Institute</b> - <a href="https://www.itoip.rs/" target="_blank">IT OIP</a> <br>
                                     <b>Duration</b> - Mar 2019 - Jan 2020 <br>
                                     <b>Location</b> Belgrade, Serbia <br>
@@ -268,6 +271,7 @@
         </div>
 
         <div class="contact" id="contact">
+
             <div class="container text-center">
                 <h1>Contact Me</h1>
                 <div class="row">
@@ -280,6 +284,18 @@
                         <i class="fa fa-envelope">
                             <p> <a href="mailto:markovic755@gmail.com">markovic755@gmail.com</a> </p>
                         </i>
+                    </div>
+                </div>
+                <div class="social-container">
+                    <div class="social-buttons">
+                        <a href="https://www.facebook.com/14nikola14" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/14nikola14" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/nikola93kg/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/nikola93kg" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/nikola93kg" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <a href="resume.pdf" target="_blank"><button type="button" class="btn btn-primary"><i

@@ -1,0 +1,35 @@
+.navbar-container {
+  top: 0;
+  position: sticky;
+  z-index: 2;
+}
+.navbar-container .fa-bars {
+  font-size: 35px;
+  color: #fff;
+}
+.navbar {
+  background-color: #000000;
+  height: 50px;
+}
+.nav-logo p {
+  font-size: 1.4em;
+  color: #fff;
+  transition: 0.4s ease;
+  color: rgb(52, 152, 219);
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0;
+  font-family: "Sacramento", cursive;
+}
+.navbar-nav {
+  float: right;
+  text-align: right;
+}
+.nav-link {
+  color: #fff;
+  transition: 0.4s;
+}
+.nav-link:hover {
+  transform: scale(1.1);
+  color: #3498db;
+}
