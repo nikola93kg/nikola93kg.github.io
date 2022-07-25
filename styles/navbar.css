@@ -1,15 +1,15 @@
 .navbar-container {
   top: 0;
   position: sticky;
-  z-index: 2;
+  z-index: 5;
 }
 .navbar-container .fa-bars {
   font-size: 35px;
   color: #fff;
 }
 .navbar {
-  background-color: #000000;
-  height: 50px;
+  background-color: #0a0d25;
+  height: 60px;
 }
 .nav-logo p {
   font-size: 1.4em;

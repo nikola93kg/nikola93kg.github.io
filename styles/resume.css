@@ -1,0 +1,67 @@
+.resume {
+  padding: 50px 0;
+  /* background: #f9f9f9; */
+}
+.resume h3 {
+  margin-bottom: 50px;
+}
+.timeline {
+  list-style-type: none;
+  position: relative;
+}
+.timeline:before {
+  content: "";
+  background: #555;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 1px;
+  height: 100%;
+  z-index: 1;
+}
+.timeline li {
+  margin: 20px 0px 20px 20px;
+}
+.timeline li h4 {
+  background: #3498db;
+  height: 40px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.timeline li h4 span {
+  font-weight: bold;
+  color: #fff;
+}
+.timeline li:before {
+  content: "";
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #3498db;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  transition: 0.8s all;
+}
+.timeline:hover li:before {
+  background-color: #3498db;
+  cursor: pointer;
+}
+.timeline:hover {
+  cursor: default;
+}
+.other {
+  list-style-type: none;
+  text-align: justify;
+  margin-left: 60px;
+}
+.other h4 {
+  margin-bottom: 20px;
+}
