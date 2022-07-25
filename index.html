@@ -88,7 +88,7 @@
                     <div class="music">
                         <!-- <img src="https://cdn-icons-png.flaticon.com/512/875/875590.png" alt="play"> -->
                         <img src="https://cdn-icons-png.flaticon.com/512/747/747965.png"
-                            title="Hungarian Dance no. 5 · Brahms" alt="play">
+                            title="Hungarian Dance no. 5 · Brahms" alt="play" class="play-btn">
                         <audio control hidden="true">
                             <source src="misc/hg-dance-no-5.mp3" type="audio/mp3">
                         </audio>
@@ -336,7 +336,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script>
-        $('img').on('click', function () {
+        $('.play-btn').on('click', function () {
             $('audio').trigger('play');
         });
     </script>
