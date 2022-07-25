@@ -22,13 +22,11 @@
     <link rel="stylesheet" href="styles/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Comic+Neue:wght@300&family=Montserrat:ital,wght@0,400;1,300&family=Quicksand&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -51,6 +49,7 @@
                 <h1>Nikola Marković</h1>
                 <p class="animated tada">Web Developer</p>
             </div>
+
         </div>
         <div class="scroll-btn">
             <div class="scroll-bar"><a href="#about"><i class="fa fa-angle-double-down"></i></a></div>
@@ -86,6 +85,14 @@
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
+                    <div class="music">
+                        <!-- <img src="https://cdn-icons-png.flaticon.com/512/875/875590.png" alt="play"> -->
+                        <img src="https://cdn-icons-png.flaticon.com/512/747/747965.png"
+                            title="Hungarian Dance no. 5 · Brahms" alt="play">
+                        <audio control hidden="true">
+                            <source src="misc/hg-dance-no-5.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -328,5 +335,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script>
+        $('img').on('click', function () {
+            $('audio').trigger('play');
+        });
+    </script>
 </body>
+
 </html>

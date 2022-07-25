@@ -35,3 +35,10 @@
   transform: scale(1.1);
   color: #3498db;
 }
+.music {
+  padding-left: 10px;
+}
+.music img {
+  height: 25px;
+  cursor: pointer;
+}

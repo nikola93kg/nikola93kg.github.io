@@ -1,3 +1,13 @@
+/* Laptop screen 15,6 inches */
+
+@media (max-width: 1537px) {
+  .navbar {
+    padding: 0 150px !important;
+  }
+}
+
+/* Tablet screen */
+
 @media (max-width: 395px) {
   .about-container .col-md-6 p {
     max-width: 320px;
@@ -84,25 +94,6 @@
   .navbar {
     height: auto;
   }
-  .tz-gallery {
-    display: flex;
-    justify-content: center;
-  }
-  .tz-gallery img {
-    margin: 0 !important;
-  }
-  .tz-gallery .row {
-    margin: auto;
-    text-align: center;
-  }
-  .resume-load h1 {
-    font-size: 22px;
-    margin: 0 auto;
-  }
-  .resume-load {
-    min-width: 400px;
-    margin: 50px auto;
-  }
 }
 @media (min-width: 376px) {
   .social-buttons a {
@@ -146,5 +137,55 @@
   }
   .projects-web-contact .projects-btns {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1008px) {
+  .navbar {
+    padding: 0 10px !important;
+  }
+  .music {
+    display: none;
+  }
+  .skills-languages img {
+    height: 60px;
+  }
+  .resume {
+    padding-top: 0 !important;
+  }
+  .separator {
+    display: none;
+  }
+  .timeline li h4 {
+    height: 40px !important;
+    font-size: 0.75rem;
+    padding-left: 10px !important;
+  }
+  .timeline li {
+    margin-left: 0 !important;
+  }
+  .timeline {
+    margin: 0 auto !important;
+    padding-left: 10px !important;
+  }
+  .timeline:before {
+    left: 10px !important;
+    display: none !important;
+  }
+  .timeline li:before {
+    display: none !important;
+  }
+  .services-box {
+    margin-right: 0 !important;
+  }
+  .other {
+    margin-left: 0 !important;
+  }
+  .projects-wrapper {
+    padding: 50px 10px !important;
+  }
+  .projects-wrapper h1 {
+    padding-bottom: 50px !important;
+    font-size: 2rem;
   }
 }
