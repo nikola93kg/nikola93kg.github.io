@@ -32,7 +32,7 @@
 .card {
   width: 380px;
   height: 250px;
-  background-color: #0009;
+  background-color: #0009 !important;
   position: relative;
   overflow: hidden;
   cursor: pointer;
