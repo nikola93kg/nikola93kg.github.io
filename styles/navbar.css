@@ -8,8 +8,10 @@
   color: #fff;
 }
 .navbar {
-  background-color: #0a0d25;
-  height: 60px;
+  /* background-color: #0a0d25; */
+  background-image: linear-gradient(90deg, #0a0d25, #080c20);
+  height: 70px;
+  padding: 0 200px !important;
 }
 .nav-logo p {
   font-size: 1.4em;
