@@ -41,4 +41,9 @@
 .music img {
   height: 25px;
   cursor: pointer;
+  opacity: 0.2;
+  transition: 0.4s all;
+}
+.music img:hover {
+  opacity: 1;
 }
