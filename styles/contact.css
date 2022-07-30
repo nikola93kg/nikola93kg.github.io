@@ -7,7 +7,7 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.9)
     ),
-    url("https://images.pexels.com/photos/2105416/pexels-photo-2105416.jpeg");
+    url("../img/landing.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

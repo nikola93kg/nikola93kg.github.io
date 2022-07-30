@@ -40,6 +40,7 @@ h3 {
 }
 .skills-languages img {
   height: 70px;
+  width: 70px;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
