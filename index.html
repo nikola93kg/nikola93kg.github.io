@@ -86,12 +86,13 @@
                         </li>
                     </ul>
                     <div class="music">
-                        <!-- <img src="https://cdn-icons-png.flaticon.com/512/875/875590.png" alt="play"> -->
                         <img src="https://cdn-icons-png.flaticon.com/512/747/747965.png"
-                            title="Hungarian Dance no. 5 · Brahms" alt="play" class="play-btn">
+                            title="Hungarian Dance no. 5 · Brahms" alt="play" class="play-btn" onclick="playAudio()">
                         <audio control hidden="true">
                             <source src="misc/hg-dance-no-5.mp3" type="audio/mp3">
                         </audio>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1069/1069283.png" alt="pause" class="pause-btn"
+                            onclick="pauseAudio()">
                     </div>
                 </div>
             </nav>
@@ -336,9 +337,18 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script>
-        $('.play-btn').on('click', function () {
+        $('.pause-btn').hide();
+
+        function playAudio() {
             $('audio').trigger('play');
-        });
+            $('.play-btn').hide();
+            $('.pause-btn').show();
+        }
+        function pauseAudio() {
+            $('audio').trigger('pause');
+            $('.play-btn').show();
+            $('.pause-btn').hide();
+        }
     </script>
 </body>
 

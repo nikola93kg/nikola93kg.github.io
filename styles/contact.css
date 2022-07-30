@@ -7,12 +7,13 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.9)
     ),
-    url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    url("https://images.pexels.com/photos/2105416/pexels-photo-2105416.jpeg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
 }
+
 .contact .row {
   padding: 20px 0;
   display: flex;

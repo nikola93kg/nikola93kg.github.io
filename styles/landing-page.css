@@ -5,11 +5,13 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.9)
     ),
-    url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    url("https://images.pexels.com/photos/2105416/pexels-photo-2105416.jpeg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .user-container {
   display: flex;
   height: 100vh;
@@ -46,7 +48,7 @@
 }
 .user-box p {
   color: #f00;
-  font-size: 28px;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: 1px;
 }
