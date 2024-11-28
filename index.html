@@ -7,6 +7,12 @@
     <meta name="description" content="Author: Nikola Markovic,
     Designer: nikola93kg, Category: Portfolio website, Role: Frontend development,
     Pages: 2 pages, Responsive: For all devices">
+    <meta property="og:title" content="Nikola Markovic Portfolio">
+    <meta property="og:description" content="Frontend Developer">
+    <meta property="og:image" content="img/user-img.webp">
+    <meta property="og:url" content="https://nikola93kg.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+
     <title>Nikola Markovic</title>
     <link rel="apple-touch-icon" sizes="180x180" href="img/favIco/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favIco/favicon-32x32.png">
@@ -21,6 +27,7 @@
     <link rel="stylesheet" href="styles/resume.css">
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/projects-web.css">
     <link rel="stylesheet" href="styles/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -47,9 +54,9 @@
     <section id="header" class="landing-page">
         <div class="user-container text-center">
             <div class="user-box">
-                <img src="img/user-img.webp" alt="User img">
+                <img src="img/user.webp" alt="User img">
                 <h1>Nikola Marković</h1>
-                <p class="animated tada">Web Developer</p>
+                <p class="animated tada">Frontend Developer</p>
             </div>
 
         </div>
@@ -105,32 +112,36 @@
                 <div class="col-md-10">
                     <div class="about-info">
                         <h1>Who Am I?</h1>
-                        <p>Frontend Web developer. <br>
-                            Three years of experience in Web development. <br>
-                            Skilled in HTML, CSS, javaScript (ES6) and React.js. <br>
-                            Also skilled in Adobe Photoshop, Adobe Lightroom, and Adobe Xd. <br>
+                        <p>Frontend Developer. <br>
+                            Skilled in HTML, CSS, JavaScript, React.js, and Java/Spring Boot. <br>
+                            Familiar with Docker, Kubernetes, and DevOps principles. <br>
+                            Also proficient in Adobe Photoshop, Adobe Lightroom, Adobe XD and Figma <br>
                             Graduated from the University of Belgrade.</p>
                     </div>
                     <div class="skills-section">
-                        <h3>Languages, frameworks and tools</h3>
+                        <h3>Languages, frameworks and tools:</h3>
                         <div class="skills-languages">
                             <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="html5">
                             <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="css3">
                             <img src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt="sass">
                             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="bootstrap">
                             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="javaScript">
-                            <img src="https://openjsf.org/wp-content/uploads/sites/84/2019/10/jquery-logo-vertical_large_square.png"
-                                alt="jquery">
+                            <img src="https://cdn-icons-png.flaticon.com/512/16066/16066077.png" alt="jquery">
                             <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="react">
                             <img src="https://cdn-icons-png.flaticon.com/512/174/174881.png" alt="wordpress">
                             <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="php">
                             <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="java">
-                            <img src="https://www.gwtproject.org/assets/build/img/navLogoBig.png"
-                                alt="google web toolkit">
+                            <img src="https://icon.icepanel.io/Technology/svg/Spring.svg" alt="spring">
+                            <img src="https://icon.icepanel.io/Technology/svg/Postman.svg" alt="postman">
+                            <img src="https://www.gwtproject.org/assets/build/img/navLogoBig.png" alt="google web toolkit">
+                            <img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="docker">
+                            <img src="https://icon.icepanel.io/Technology/svg/Podman.svg" alt="podman">
+                            <img src="https://icon.icepanel.io/Technology/svg/Kubernetes.svg" alt="k8s">
+                            <img src="https://icon.icepanel.io/Technology/svg/Grafana.svg" alt="grafana">
                             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="figma">
                             <img src="https://cdn-icons-png.flaticon.com/512/552/552224.png" alt="adobe xd">
-                            <img src="https://i.pinimg.com/originals/01/e5/00/01e500fca29c045d432b64f285f9c229.png"
-                                alt="git">
+                            <img src="https://i.pinimg.com/originals/01/e5/00/01e500fca29c045d432b64f285f9c229.png" alt="git">
+                            <img src="https://icon.icepanel.io/Technology/svg/GitLab.svg" alt="gitlab">
                         </div>
                     </div>
                 </div>
@@ -139,41 +150,183 @@
 
         <hr class="separator">
 
-        <div class="services-container" id="services">
-            <div class="services-content container">
-                <h1 class="text-center">My Offered Services</h1>
-                <p class="text-center">Frontend development and Graphics <br>
-                    Clean and readable code.
-                </p>
-                <div class="row responsive-row">
-                    <div class="col-md-4">
-                        <div class="services-box">
-                            <i class="fa fa-laptop"></i><span>Frontend</span>
-                            <p>Crafting website designs that look good, just like smooth, intuitive navigation. <a
-                                    href="projects-web.html">Click here</a> to see some of my projects.</p>
-
+        <div class="projects-wrapper" id="services">
+            <h1 class="text-center">Explore My Work</h1>
+            <p style="margin-bottom: 50px;"></p>
+            <div class="project-container websites-container">
+                <div class="card">
+                    <img loading="lazy" src="https://nmarkdesigns.com/wp-content/uploads/2023/09/art-home-05-copy.jpg" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">NMark Designs</h2>
+                            <a href="https://nmarkdesigns.com/" target="_blank" class="button">View</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="services-box">
-                            <i class="fa fa-picture-o"></i><span>Graphics</span>
-                            <p>Work in Adobe Photoshop. Graphic design and photo editing. Designing logos, flyers,
-                                image manipulations, resizing, etc.
-                            </p>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/jw28wXs/Screenshot-2024-11-28-124148.png" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">DH Travell</h2>
+                            <a href="https://dhtravel.rs/" target="_blank" class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/q1N1BXZ/Screenshot-2023-03-18-234847.png" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Stamenko Milic Photography</h2>
+                            <a href="https://www.milicweddings.com/" target="_blank" class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/JtMnMBy/Screenshot-1.png" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Nest Home</h2>
+                            <a href="https://nikola93kg.github.io/nest-home/" target="_blank" class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/1rCpmqH/Screenshot-2024-11-28-124355.png" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Banquetes Castellanos Zoreda</h2>
+                            <a href="https://precious-marigold-0deefc.netlify.app/" target="_blank" class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/4Rq5gCG/pexels-pixabay-4596531-min.jpg" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Bojan Magician</h2>
+                            <a href="https://velvety-raindrop-41b3a2.netlify.app/" target="_blank" class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-container react-container">
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/y4vTSHX/Screenshot-1.png" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Crypto price update</h2>
+                            <a href="https://nikola93kg.github.io/crypto-prices-updates/" target="_blank"
+                                class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/1fCDHWC/phone.jpg" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Task tracker</h2>
+                            <a href="https://nikola93kg.github.io/task-tracker/" target="_blank" class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy"
+                        src="https://i.ibb.co/vYFFM8m/screencapture-localhost-3000-pass-generator-app-2022-06-01-00-18-21.png"
+                        class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Password generator</h2>
+                            <a href="https://nikola93kg.github.io/pass-generator-app/" target="_blank"
+                                class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/18mZvrY/Screenshot-5.png" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Grocery Bud</h2>
+                            <a href="https://nikola93kg.github.io/grocery-bud" target="_blank" class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/M5n7tyP/Screenshot-2.png" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Body Mass Index Calculator</h2>
+                            <a href="https://nikola93kg.github.io/BodyMassIndex-calculator/" target="_blank"
+                                class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/bbLsdjm/Screenshot-1.png" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Color generator</h2>
+                            <a href="https://nikola93kg.github.io/color-generator" target="_blank" class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/RCn07Hb/unsplash.png" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Image search app</h2>
+                            <a href="https://nikola93kg.github.io/image-search-app/" target="_blank" class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/s9mb0qw/screencapture-localhost-3000-2022-05-04-23-57-58.png"
+                        class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Bands app</h2>
+                            <a href="https://nikola93kg.github.io/bands-app/" target="_blank" class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/C6KQ7JX/download.png" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Robofriends</h2>
+                            <a href="https://gilded-stardust-c605fd.netlify.app/" target="_blank" class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/TtZXMXS/Screenshot-3.png" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Submenus landing page</h2>
+                            <a href="https://nikola93kg.github.io/stripe-submenus-landingPage/" target="_blank"
+                                class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/cF5r67T/Screenshot-2.png" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Slider reviews</h2>
+                            <a href="https://nikola93kg.github.io/slider-reviews/" target="_blank" class="button">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="https://i.ibb.co/3Fm54rm/Screenshot-4.png" class="card-image">
+                    <div class="card-overlay">
+                        <div class="overlay-text">
+                            <h2 class="card-title">Job tabs portfolio</h2>
+                            <a href="https://nikola93kg.github.io/job-tabs/" target="_blank" class="button">View</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="social-container">
-            <h1>Social media</h1>
-            <div class="social-buttons">
-                <a href="https://www.facebook.com/14nikola14" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com/14nikola14" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/nikola93kg/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/nikola93kg" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/nikola93kg" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
 
@@ -181,6 +334,8 @@
 
         <div class="resume" id="resume">
             <div class="container">
+                <h1 class="text-center mb-5">Resume</h1>
+
                 <div class="row">
                     <div class="col-md-6">
                         <h3 class="text-center">Work History</h3>
@@ -351,7 +506,7 @@
                             class="fa fa-rocket"></i>Hire me</button></a>
             </div>
             <div class="footer text-center">
-                <p>&copy; Copyright - Nikola Markovic 2022.</p>
+                <p>&copy; Copyright - Nikola Markovic 2024.</p>
             </div>
         </div>
     </section>

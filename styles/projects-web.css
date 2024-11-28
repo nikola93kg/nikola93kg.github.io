@@ -13,9 +13,12 @@
 .projects-wrapper {
   padding: 50px 130px;
   background-color: #fff;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 .projects-wrapper h1 {
   color: #000;
+  padding-top: 30px;
 }
 .projects-wrapper hr {
   margin: 50px auto;
@@ -123,9 +126,7 @@
 .go-to-top i {
   font-size: 1.5rem;
 }
-.react-container {
-  padding-bottom: 80px;
-}
+
 .websites-container {
   padding-bottom: 50px;
 }
