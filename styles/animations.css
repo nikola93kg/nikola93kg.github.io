@@ -1,0 +1,123 @@
+/* ============================================
+   Scroll-Triggered Animations
+   UI UX Pro Max — Motion-Driven Portfolio Style
+   ============================================ */
+
+/* ─── Base Reveal State ─────────────────────── */
+[data-animate] {
+  opacity: 0;
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+[data-animate="fade-up"] {
+  transform: translateY(28px);
+}
+
+[data-animate="fade-in"] {
+  transform: none;
+}
+
+[data-animate="fade-left"] {
+  transform: translateX(-28px);
+}
+
+[data-animate="fade-right"] {
+  transform: translateX(28px);
+}
+
+[data-animate="scale-in"] {
+  transform: scale(0.94);
+}
+
+/* Triggered state — added by JS via IntersectionObserver */
+[data-animate].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ─── Staggered Children ────────────────────── */
+[data-animate-stagger] > * {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+[data-animate-stagger].is-visible > *:nth-child(1)  { opacity: 1; transform: none; transition-delay: 0ms;   }
+[data-animate-stagger].is-visible > *:nth-child(2)  { opacity: 1; transform: none; transition-delay: 60ms;  }
+[data-animate-stagger].is-visible > *:nth-child(3)  { opacity: 1; transform: none; transition-delay: 120ms; }
+[data-animate-stagger].is-visible > *:nth-child(4)  { opacity: 1; transform: none; transition-delay: 180ms; }
+[data-animate-stagger].is-visible > *:nth-child(5)  { opacity: 1; transform: none; transition-delay: 240ms; }
+[data-animate-stagger].is-visible > *:nth-child(6)  { opacity: 1; transform: none; transition-delay: 300ms; }
+[data-animate-stagger].is-visible > *:nth-child(n+7) { opacity: 1; transform: none; transition-delay: 360ms; }
+
+/* ─── Project Filter Tabs ───────────────────── */
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 40px 0;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 9px 26px;
+  border: 2px solid var(--color-dark, #18181B);
+  background: transparent;
+  color: var(--color-dark, #18181B);
+  font-family: var(--font-body, 'Space Grotesk', sans-serif);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 220ms ease, color 220ms ease, border-color 220ms ease;
+  letter-spacing: 0.4px;
+  line-height: 1;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--color-dark, #18181B);
+  color: #fff;
+  border-color: var(--color-dark, #18181B);
+}
+
+.filter-btn:focus-visible {
+  outline: 2px solid var(--color-primary, #2563EB);
+  outline-offset: 3px;
+}
+
+/* ─── Card Hidden State (Filter) ───────────── */
+.card.hidden {
+  display: none !important;
+}
+
+/* ─── Skip-to-Content (Accessibility) ──────── */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 12px;
+  background: var(--color-primary, #2563EB);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-family: var(--font-body, 'Space Grotesk', sans-serif);
+  font-weight: 600;
+  font-size: 0.9rem;
+  z-index: 9999;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+/* ─── Prefers-Reduced-Motion Override ──────── */
+@media (prefers-reduced-motion: reduce) {
+  [data-animate],
+  [data-animate-stagger] > * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

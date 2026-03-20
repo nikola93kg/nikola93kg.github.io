@@ -2,540 +2,718 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Author: Nikola Markovic,
-    Designer: nikola93kg, Category: Portfolio website, Role: Frontend development,
-    Pages: 2 pages, Responsive: For all devices">
-    <meta property="og:title" content="Nikola Markovic Portfolio">
-    <meta property="og:description" content="Frontend Developer">
-    <meta property="og:image" content="img/user-img.webp">
-    <meta property="og:url" content="https://nikola93kg.github.io">
-    <meta name="twitter:card" content="summary_large_image">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nikola Markovic — Frontend Developer specialising in React, Next.js, TypeScript, and scalable enterprise UI. Based in Belgrade, Serbia.">
+  <meta property="og:title" content="Nikola Markovic — Frontend Developer">
+  <meta property="og:description" content="Building modern, scalable, and user-focused web applications. React · Next.js · TypeScript · Enterprise UI.">
+  <meta property="og:image" content="img/user.webp">
+  <meta property="og:url" content="https://nikola93kg.github.io">
+  <meta name="twitter:card" content="summary_large_image">
 
-    <title>Nikola Markovic</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favIco/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favIco/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favIco/favicon-16x16.png">
-    <!-- <link rel="manifest" href="/site.webmanifest"> -->
-    <link rel="stylesheet" href="styles/landing-page.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/services.css">
-    <link rel="stylesheet" href="styles/social-icons.css">
-    <link rel="stylesheet" href="styles/responsive.css">
-    <link rel="stylesheet" href="styles/resume.css">
-    <link rel="stylesheet" href="styles/contact.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/projects-web.css">
-    <link rel="stylesheet" href="styles/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Comic+Neue:wght@300&family=Montserrat:ital,wght@0,400;1,300&family=Quicksand&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.ico">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N3LTVWZHBP"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-N3LTVWZHBP');
-    </script>
+  <title>Nikola Markovic — Frontend Developer</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favIco/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favIco/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favIco/favicon-16x16.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/portfolio.css">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N3LTVWZHBP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-N3LTVWZHBP');
+  </script>
+  <script>!function(){var t=localStorage.getItem('portfolio-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.dataset.theme=t}();</script>
 </head>
 
 <body>
-    <section id="header" class="landing-page">
-        <div class="user-container text-center">
-            <div class="user-box">
-                <img src="img/user.webp" alt="User img">
-                <h1>Nikola Marković</h1>
-                <p class="animated tada">Frontend Developer</p>
-            </div>
 
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- NAV -->
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary navigation">
+
+      <!-- Left: music + theme toggle -->
+      <div class="nav__start">
+        <div class="music-player" id="musicPlayer">
+          <button class="music-btn" id="musicPlay" onclick="playAudio()" aria-label="Play: Hungarian Dance No. 5 – Brahms" title="Hungarian Dance No. 5 · Brahms">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </button>
+          <button class="music-btn music-btn--pause" id="musicPause" onclick="pauseAudio()" aria-label="Pause music" style="display:none">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+          </button>
+          <audio id="bgAudio" hidden>
+            <source src="misc/hg-dance-no-5.mp3" type="audio/mp3">
+          </audio>
         </div>
-        <div class="scroll-btn">
-            <div class="scroll-bar"><a href="#about"><i class="fa fa-angle-double-down"></i></a></div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light mode">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+
+      <!-- Right: nav links + mobile burger -->
+      <div class="nav__end">
+        <ul class="nav__menu" id="navMenu" role="list">
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#experience">Experience</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link nav__link--cta" href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav__burger" id="navBurger" aria-controls="navMenu" aria-expanded="false" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <!-- <div class="hero__eyebrow reveal">
+            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+            <span>Available for projects</span>
+          </div> -->
+          <h1 class="hero__name hero__name--glitch reveal" data-text="Nikola Marković">Nikola Marković</h1>
+          <p class="hero__role reveal reveal--delay-1">Frontend Developer</p>
+          <p class="hero__tagline reveal reveal--delay-2">
+            Building modern, scalable, and user-focused web applications —<br class="hero__br">
+            from enterprise platforms to polished freelance products.
+          </p>
+          <p class="hero__sub reveal reveal--delay-3">
+            5+ years of professional experience with React, Next.js, TypeScript, and Material UI.
+            Enterprise-tested at Telepass and ICOS. Freelance-proven across 10+ client projects.
+          </p>
+          <div class="hero__actions reveal reveal--delay-4">
+            <a class="btn btn--primary btn--glow" href="#projects">View Projects</a>
+            <a class="btn btn--ghost btn--ghost-sci" href="#contact">Contact Me</a>
+          </div>
+          <div class="hero__trust reveal reveal--delay-5">
+            <span>React</span><span aria-hidden="true">·</span>
+            <span>Next.js</span><span aria-hidden="true">·</span>
+            <span>TypeScript</span><span aria-hidden="true">·</span>
+            <span>Material UI</span><span aria-hidden="true">·</span>
+            <span>Docker</span><span aria-hidden="true">·</span>
+            <span>Kubernetes</span>
+          </div>
         </div>
+
+        <div class="hero__panel reveal reveal--delay-3" aria-hidden="true">
+          <div class="hero__panel-bar">
+            <span class="hero__panel-dot hero__panel-dot--r"></span>
+            <span class="hero__panel-dot hero__panel-dot--y"></span>
+            <span class="hero__panel-dot hero__panel-dot--g"></span>
+            <span class="hero__panel-title">nikola.config.ts</span>
+          </div>
+          <pre class="hero__panel-code"><code><span class="tok-k">const</span> <span class="tok-n">developer</span> <span class="tok-p">=</span> <span class="tok-p">{</span>
+  name<span class="tok-p">:</span>       <span class="tok-s">'Nikola Marković'</span><span class="tok-p">,</span>
+  role<span class="tok-p">:</span>       <span class="tok-s">'Frontend Developer'</span><span class="tok-p">,</span>
+  location<span class="tok-p">:</span>   <span class="tok-s">'Belgrade, Serbia'</span><span class="tok-p">,</span>
+  experience<span class="tok-p">:</span> <span class="tok-m">5</span><span class="tok-p">,</span>  <span class="tok-c">// years</span>
+  stack<span class="tok-p">:</span> <span class="tok-p">[</span>
+    <span class="tok-s">'React'</span><span class="tok-p">,</span>
+    <span class="tok-s">'Next.js'</span><span class="tok-p">,</span>
+    <span class="tok-s">'TypeScript'</span><span class="tok-p">,</span>
+    <span class="tok-s">'Node.js'</span><span class="tok-p">,</span>
+  <span class="tok-p">],</span>
+  enterprise<span class="tok-p">:</span> <span class="tok-p">[</span>
+    <span class="tok-s">'Telepass'</span><span class="tok-p">,</span>
+    <span class="tok-s">'ICOS'</span><span class="tok-p">,</span>
+    <span class="tok-s">'Esselunga'</span><span class="tok-p">,</span>
+  <span class="tok-p">],</span>
+  freelance<span class="tok-p">:</span>   <span class="tok-m">14</span><span class="tok-p">,</span> <span class="tok-c">// client sites</span>
+  openTo<span class="tok-p">:</span>     <span class="tok-kc">true</span><span class="tok-p">,</span>
+<span class="tok-p">};</span>
+
+<span class="tok-k">export default</span> developer<span class="tok-p">;</span></code></pre>
+          <div class="hero__panel-status">
+            <span class="hero__panel-led" aria-hidden="true"></span> Ready to build
+          </div>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="Scroll to About section">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
     </section>
 
-    <section id="user-info">
-        <div class="navbar-container">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand nav-logo" href="#about">
-                    <p>nikola93kg</p>
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about__grid">
+
+          <!-- Image column -->
+          <div class="about__photo-wrap reveal">
+            <div class="about__photo-frame">
+              <img src="img/user.webp" alt="Portrait of Nikola Markovic, Frontend Developer" class="about__img" loading="lazy">
+              
+            </div>
+
+
+          </div>
+
+          <!-- Content column -->
+          <div class="about__content">
+            <div class="section__header reveal" style="margin-bottom:var(--sp-6)">
+              <span class="section__label">About</span>
+              <h2 class="section__title">Professional Summary</h2>
+            </div>
+            <p class="about__lead reveal">
+              Frontend Developer with 5+ years of professional experience building
+              production-grade web applications — from large enterprise platforms
+              to responsive freelance products.
+            </p>
+            <p class="about__body reveal reveal--delay-1">
+              At <strong>Engineering Software Lab</strong>, I work within cross-functional
+              teams delivering enterprise software for clients including <strong>Telepass</strong>
+              (Italy's leading mobility platform) and <strong>ICOS</strong> (cloud-edge-IoT
+              orchestration system). Comfortable across the full frontend stack: React,
+              TypeScript, Material UI, REST APIs, and CI/CD pipelines.
+            </p>
+            <p class="about__body reveal reveal--delay-2">
+              In parallel, I run a freelance practice delivering custom websites,
+              headless frontends, WordPress solutions, and performance-optimised
+              UI/UX for clients across multiple industries.
+            </p>
+            <div class="about__links reveal reveal--delay-3">
+              <a class="btn btn--primary" href="misc/resume.pdf" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download CV
+              </a>
+              <a class="btn btn--ghost" href="https://github.com/nikola93kg" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                GitHub
+              </a>
+              <a class="btn btn--ghost" href="https://linkedin.com/in/nikola93kg" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+        <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Work</span>
+          <h2 class="section__title">Selected Projects</h2>
+          <p class="section__sub">Real client work delivered across hospitality, beauty, education, retail, and services.</p>
+        </div>
+
+        <div class="projects__grid projects__grid--featured">
+
+          <article class="pcard pcard--featured reveal">
+            <div class="pcard__img-wrap">
+              <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2026/03/Screenshot-2026-03-12-095334.png" alt="Ilić Enterijer website" loading="lazy">
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">NextJS</span></div>
+              <h3 class="pcard__title">Ilić Enterijer</h3>
+              <p class="pcard__desc">Interior design studio showcase with a curated portfolio gallery, service pages, and contact form. Clean aesthetic aligned with the brand identity.</p>
+              <div class="pcard__stack">NextJS · React · Vercel · Tailwind · Custom CSS · Responsive</div>
+              <div class="pcard__actions">
+                <a class="pcard__link pcard__link--live" href="https://ilicenterijer.rs/" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav"
-                    aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar-nav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#top">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#resume">Resume</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="music">
-                        <img src="https://cdn-icons-png.flaticon.com/512/747/747965.png"
-                            title="Hungarian Dance no. 5 · Brahms" alt="play" class="play-btn" onclick="playAudio()">
-                        <audio control hidden="true">
-                            <source src="misc/hg-dance-no-5.mp3" type="audio/mp3">
-                        </audio>
-                        <img src="https://cdn-icons-png.flaticon.com/512/1069/1069283.png" alt="pause" class="pause-btn"
-                            onclick="pauseAudio()">
-                    </div>
-                </div>
-            </nav>
+              </div>
+            </div>
+          </article>
+          <article class="pcard pcard--featured reveal reveal--delay-1">
+            <div class="pcard__img-wrap">
+              <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2026/03/Screenshot-2026-03-12-095240.png" alt="OŠ Dule Karaklajić website" loading="lazy">
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Education</span></div>
+              <h3 class="pcard__title">OŠ Dule Karaklajić</h3>
+              <p class="pcard__desc">Official website for an elementary school. Structured information architecture, news feed, event calendar, and a responsive layout for parents and students.</p>
+              <div class="pcard__stack">WordPress · Elementor · Custom CSS · Responsive</div>
+              <div class="pcard__actions">
+                <a class="pcard__link pcard__link--live" href="https://dulovaskola.edu.rs/" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="pcard pcard--featured reveal reveal--delay-1">
+            <div class="pcard__img-wrap">
+              <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/02/Screenshot-2025-07-13-222405.png" alt="Časovi Francuskog – Belle Époque website" loading="lazy">
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Education</span></div>
+              <h3 class="pcard__title">Časovi Francuskog – Belle Époque</h3>
+              <p class="pcard__desc">French language tutoring service website. Elegant Parisian aesthetic, structured lesson overview, tutor profile section, and a booking inquiry form.</p>
+              <div class="pcard__stack">Wordpress · CSS · JavaScript · Elementor</div>
+              <div class="pcard__actions">
+                <a class="pcard__link pcard__link--live" href="https://casovifrancuskog.rs/" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="pcard pcard--featured reveal reveal--delay-2">
+            <div class="pcard__img-wrap">
+              <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/12/Screenshot-2025-12-28-234830.png" alt="Powder Brows Vienna website" loading="lazy">
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Beauty</span></div>
+              <h3 class="pcard__title">Powder Brows Vienna</h3>
+              <p class="pcard__desc">Premium beauty salon website targeting Austrian clients. Elegant layout featuring service gallery, pricing packages, and a conversion-focused booking CTA.</p>
+              <div class="pcard__stack">NextJS · React · TypeScript · Vercel</div>
+              <div class="pcard__actions">
+                <a class="pcard__link pcard__link--live" href="https://www.powderbrowsvienna.com" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="pcard pcard--featured reveal">
+            <div class="pcard__img-wrap">
+              <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/12/Screenshot-2025-12-15-223234.png" alt="Tripoli Sweets website" loading="lazy">
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Food &amp; Beverage</span></div>
+              <h3 class="pcard__title">Tripoli Sweets</h3>
+              <p class="pcard__desc">Confectionery brand website with a visual-heavy product showcase, menu section, and multilingual considerations designed for a Middle Eastern market.</p>
+              <div class="pcard__stack">WordPress · CSS · JavaScript · HTML</div>
+              <div class="pcard__actions">
+                <a class="pcard__link pcard__link--live" href="https://www.tripolisweets.com.mx" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="pcard pcard--featured reveal reveal--delay-1">
+            <div class="pcard__img-wrap">
+              <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/12/Screenshot-2025-12-15-145503.png" alt="Frankultura website" loading="lazy">
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Events</span></div>
+              <h3 class="pcard__title">Frankultura</h3>
+              <p class="pcard__desc">Cultural organisation website with event listings, gallery, and community engagement sections. Localised content and design for a Serbian audience.</p>
+              <div class="pcard__stack">WordPress · Custom CSS · JavaScript</div>
+              <div class="pcard__actions">
+                <a class="pcard__link pcard__link--live" href="https://www.frankultura.rs" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="pcard pcard--featured reveal reveal--delay-2">
+            <div class="pcard__img-wrap">
+              <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/10/Screenshot-2025-10-29-214811.png" alt="CoolFridgeGuys website" loading="lazy">
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Service</span></div>
+              <h3 class="pcard__title">CoolFridgeGuys</h3>
+              <p class="pcard__desc">Home appliance repair service landing page. Service area coverage, instant quote form, testimonials section, and local SEO trust signals.</p>
+              <div class="pcard__stack">NextJS · React · TypeScript · Vercel · Squarespace</div>
+              <div class="pcard__actions">
+                <a class="pcard__link pcard__link--live" href="https://www.coolfridgeguys.com/" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site
+                </a>
+              </div>
+            </div>
+          </article>
+            <article class="pcard pcard--featured reveal">
+            <div class="pcard__img-wrap">
+              <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/09/Screenshot-2025-09-22-113259.png" alt="LaDekor website" loading="lazy">
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta">
+                <span class="pcard__tag">Freelance</span>
+                <span class="pcard__tag">Renovation</span>
+              </div>
+              <h3 class="pcard__title">LaDekor</h3>
+              <p class="pcard__desc">A renovation and finishing services website for a team specializing in painting, plastering, façade work, tiling, and full interior adaptations. Built to present services clearly, showcase completed projects, and drive quote requests.</p>
+              <div class="pcard__stack">HTML · JavaScript · CSS</div>
+              <div class="pcard__actions">
+                <a class="pcard__link pcard__link--live" href="https://ladekor.rs/" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="pcard pcard--featured reveal reveal--delay-1">
+            <div class="pcard__img-wrap">
+              <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/07/Screenshot-2025-07-13-220155.png" alt="Anabela Bebi Oprema website" loading="lazy">
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">E-commerce</span></div>
+              <h3 class="pcard__title">Anabela Bebi Oprema</h3>
+              <p class="pcard__desc">Baby equipment e-commerce store with a full product catalogue, category filtering, and an optimised checkout flow. Mobile-first and SEO-focused.</p>
+              <div class="pcard__stack">WordPress · WooCommerce · SEO · CSS</div>
+              <div class="pcard__actions">
+                <a class="pcard__link pcard__link--live" href="https://anabelashop.rs/" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="pcard pcard--featured reveal reveal--delay-2">
+            <div class="pcard__img-wrap">
+              <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/02/Screenshot-2023-09-17-224102.png" alt="Madjionicar Bojan website" loading="lazy">
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Landing Page</span></div>
+              <h3 class="pcard__title">Madjionicar Bojan</h3>
+              <p class="pcard__desc">Entertainment landing page for a professional magician. Dramatic visual design, event booking section, gallery integration, and fast static deployment on Netlify.</p>
+              <div class="pcard__stack">NextJS · Tailwind · TypeScript · Hostinger</div>
+              <div class="pcard__actions">
+                <a class="pcard__link pcard__link--live" href="https://madjionicarbokac.com/" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="pcard pcard--featured reveal">
+            <div class="pcard__img-wrap">
+              <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/02/Screenshot-2024-11-28-124355.png" alt="Banquetes Castellanos Zoreda website" loading="lazy">
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Landing Page</span></div>
+              <h3 class="pcard__title">Banquetes Castellanos Zoreda</h3>
+              <p class="pcard__desc">Mexiacn banqueting venue website with gallery, multilingual support, booking CTA, and a strong visual identity aligned with the brand.</p>
+              <div class="pcard__stack">HTML · CSS · JavaScript · Netlify</div>
+              <div class="pcard__actions">
+                <a class="pcard__link pcard__link--live" href="https://precious-marigold-0deefc.netlify.app/" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="pcard pcard--featured reveal reveal--delay-1">
+            <div class="pcard__img-wrap">
+              <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/02/Screenshot-1.png" alt="Nest Home Solutions website" loading="lazy">
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Service</span></div>
+              <h3 class="pcard__title">Nest Home Solutions</h3>
+              <p class="pcard__desc">Home improvement and renovation services landing page. Project gallery, service breakdown, client testimonials, and a local contact form for lead generation.</p>
+              <div class="pcard__stack">ReactJS · CSS · Github</div>
+              <div class="pcard__actions">
+                <a class="pcard__link pcard__link--live" href="https://nikola93kg.github.io/nest-home/" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="pcard pcard--featured reveal reveal--delay-2">
+            <div class="pcard__img-wrap">
+              <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/02/Screenshot-2023-09-17-222143.png" alt="Stamenko Milic Photography website" loading="lazy">
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Photography</span></div>
+              <h3 class="pcard__title">Stamenko Milic Photography</h3>
+              <p class="pcard__desc">Premium photography portfolio and booking site. Large-format visuals, minimal UI, and conversion-oriented layout targeting wedding and portrait clients.</p>
+              <div class="pcard__stack">HTML · CSS · JavaScript · Pixieset</div>
+              <div class="pcard__actions">
+                <a class="pcard__link pcard__link--live" href="https://www.milicweddings.com/" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="pcard pcard--featured reveal">
+            <div class="pcard__img-wrap">
+              <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/02/Screenshot-2024-11-28-124148.png" alt="DH Travel website" loading="lazy">
+            </div>
+            <div class="pcard__body">
+              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">WordPress</span></div>
+              <h3 class="pcard__title">DH Travel</h3>
+              <p class="pcard__desc">Corporate travel agency website with a custom WordPress theme. Fully responsive, mobile-first design with fast load times and structured SEO markup.</p>
+              <div class="pcard__stack">WordPress · Custom CSS · Responsive · SEO</div>
+              <div class="pcard__actions">
+                <a class="pcard__link pcard__link--live" href="#" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Site
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
-
-        <div class="about-container container" id="about">
-            <div class="row">
-                <div class="col-md-10">
-                    <div class="about-info">
-                        <h1>Who Am I?</h1>
-                        <p>Frontend Developer. <br>
-                            Skilled in HTML, CSS, JavaScript, React.js, and Java/Spring Boot. <br>
-                            Familiar with Docker, Kubernetes, and DevOps principles. <br>
-                            Also proficient in Adobe Photoshop, Adobe Lightroom, Adobe XD and Figma <br>
-                            Graduated from the University of Belgrade.</p>
-                    </div>
-                    <div class="skills-section">
-                        <h3>Languages, frameworks and tools:</h3>
-                        <div class="skills-languages">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="html5">
-                            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="css3">
-                            <img src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt="sass">
-                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="bootstrap">
-                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="javaScript">
-                            <img src="https://cdn-icons-png.flaticon.com/512/16066/16066077.png" alt="jquery">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="react">
-                            <img src="https://cdn-icons-png.flaticon.com/512/174/174881.png" alt="wordpress">
-                            <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="php">
-                            <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="java">
-                            <img src="https://icon.icepanel.io/Technology/svg/Spring.svg" alt="spring">
-                            <img src="https://icon.icepanel.io/Technology/svg/Postman.svg" alt="postman">
-                            <img src="https://www.gwtproject.org/assets/build/img/navLogoBig.png" alt="google web toolkit">
-                            <img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="docker">
-                            <img src="https://icon.icepanel.io/Technology/svg/Podman.svg" alt="podman">
-                            <img src="https://icon.icepanel.io/Technology/svg/Kubernetes.svg" alt="k8s">
-                            <img src="https://icon.icepanel.io/Technology/svg/Grafana.svg" alt="grafana">
-                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="figma">
-                            <img src="https://cdn-icons-png.flaticon.com/512/552/552224.png" alt="adobe xd">
-                            <img src="https://i.pinimg.com/originals/01/e5/00/01e500fca29c045d432b64f285f9c229.png" alt="git">
-                            <img src="https://icon.icepanel.io/Technology/svg/GitLab.svg" alt="gitlab">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr class="separator">
-
-        <div class="projects-wrapper" id="services">
-            <h1 class="text-center">Explore My Work</h1>
-            <p style="margin-bottom: 50px;"></p>
-            <div class="project-container websites-container">
-                <div class="card">
-                    <img loading="lazy" src="https://nmarkdesigns.com/wp-content/uploads/2023/09/art-home-05-copy.jpg" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">NMark Designs</h2>
-                            <a href="https://nmarkdesigns.com/" target="_blank" class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/jw28wXs/Screenshot-2024-11-28-124148.png" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">DH Travell</h2>
-                            <a href="https://dhtravel.rs/" target="_blank" class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/q1N1BXZ/Screenshot-2023-03-18-234847.png" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Stamenko Milic Photography</h2>
-                            <a href="https://www.milicweddings.com/" target="_blank" class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/JtMnMBy/Screenshot-1.png" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Nest Home</h2>
-                            <a href="https://nikola93kg.github.io/nest-home/" target="_blank" class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/1rCpmqH/Screenshot-2024-11-28-124355.png" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Banquetes Castellanos Zoreda</h2>
-                            <a href="https://precious-marigold-0deefc.netlify.app/" target="_blank" class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/4Rq5gCG/pexels-pixabay-4596531-min.jpg" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Bojan Magician</h2>
-                            <a href="https://velvety-raindrop-41b3a2.netlify.app/" target="_blank" class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="project-container react-container">
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/y4vTSHX/Screenshot-1.png" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Crypto price update</h2>
-                            <a href="https://nikola93kg.github.io/crypto-prices-updates/" target="_blank"
-                                class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/1fCDHWC/phone.jpg" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Task tracker</h2>
-                            <a href="https://nikola93kg.github.io/task-tracker/" target="_blank" class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy"
-                        src="https://i.ibb.co/vYFFM8m/screencapture-localhost-3000-pass-generator-app-2022-06-01-00-18-21.png"
-                        class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Password generator</h2>
-                            <a href="https://nikola93kg.github.io/pass-generator-app/" target="_blank"
-                                class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/18mZvrY/Screenshot-5.png" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Grocery Bud</h2>
-                            <a href="https://nikola93kg.github.io/grocery-bud" target="_blank" class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/M5n7tyP/Screenshot-2.png" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Body Mass Index Calculator</h2>
-                            <a href="https://nikola93kg.github.io/BodyMassIndex-calculator/" target="_blank"
-                                class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/bbLsdjm/Screenshot-1.png" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Color generator</h2>
-                            <a href="https://nikola93kg.github.io/color-generator" target="_blank" class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/RCn07Hb/unsplash.png" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Image search app</h2>
-                            <a href="https://nikola93kg.github.io/image-search-app/" target="_blank" class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/s9mb0qw/screencapture-localhost-3000-2022-05-04-23-57-58.png"
-                        class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Bands app</h2>
-                            <a href="https://nikola93kg.github.io/bands-app/" target="_blank" class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/C6KQ7JX/download.png" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Robofriends</h2>
-                            <a href="https://gilded-stardust-c605fd.netlify.app/" target="_blank" class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/TtZXMXS/Screenshot-3.png" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Submenus landing page</h2>
-                            <a href="https://nikola93kg.github.io/stripe-submenus-landingPage/" target="_blank"
-                                class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/cF5r67T/Screenshot-2.png" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Slider reviews</h2>
-                            <a href="https://nikola93kg.github.io/slider-reviews/" target="_blank" class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img loading="lazy" src="https://i.ibb.co/3Fm54rm/Screenshot-4.png" class="card-image">
-                    <div class="card-overlay">
-                        <div class="overlay-text">
-                            <h2 class="card-title">Job tabs portfolio</h2>
-                            <a href="https://nikola93kg.github.io/job-tabs/" target="_blank" class="button">View</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        <hr class="separator">
-
-        <div class="resume" id="resume">
-            <div class="container">
-                <h1 class="text-center mb-5">Resume</h1>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3 class="text-center">Work History</h3>
-                        <ul class="timeline">
-                            <li>
-                                <h4><span>2022 - present&nbsp;</span> Frontend Developer</h4>
-                                <p> I have been a part of the team since September 2022 and have been able
-                                    to bring numerous projects to life with my expertise in React development.
-                                    My ability to turn complex ideas into user-friendly and visually appealing
-                                    frontend interfaces has played a critical role in ensuring the success of
-                                    Engineering Software Lab's mission to provide innovative software solutions. </p>
-
-                                <b>Company</b> - <a href="https://www.engserbia.com/" target="_blank">Engineering
-                                    Software Lab</a>
-                                <br>
-                                <b>Duration</b> - Sep 2022 - present <br>
-                                <b>Location</b> - Belgrade, Serbia <br>
-                                </p>
-                            </li>
-                            <li>
-                                <h4><span>2020 -&nbsp;</span> Frontend Developer</h4>
-                                <p>Providing customizations and maintenance of WordPress website and GetCertified app.
-                                    YouTestMe company specializes in delivering secure and complete e-learning
-                                    solutions, whereas key features include test management, item authoring, advanced
-                                    reporting, and a security system.<br>
-                                    <b>Company</b> - <a href="https://www.youtestme.com/" target="_blank">YouTestMe</a>
-                                    <br>
-                                    <b>Duration</b> - Sep 2020 - May 2021 <br>
-                                    <b>Location</b> - Toronto, ON <br>
-                                </p>
-                            </li>
-                            <li>
-                                <h4><span>2018 -&nbsp;</span> Photoshop Masker</h4>
-                                <p>Providing image tagging and annotation services for deep learning, machine learning
-                                    and computer vision companies. <br>
-                                    <b>Company</b> - <a href="https://www.imageannotation.ai/"
-                                        target="_blank">Microwork.io</a> <br>
-                                    <b>Duration</b> - Sep 2018 - Oct 2019 <br>
-                                    <b>Location</b> - San Jose, CA <br>
-                                </p>
-                            </li>
-                            <li>
-                                <h4><span>2018 -&nbsp;</span> Professor</h4>
-                                <p>I was working as a part-time Professor at a gymnasium in my hometown Lazarevac.<br>
-                                    <b>High School</b> - <a href="https://www.gimnazijalazarevac.edu.rs/"
-                                        target="_blank">Gimnazija Lazarevac</a> <br>
-                                    <b>Duration</b> - Sep 2018 - Jan 2019 <br>
-                                    <b>Location</b> - Lazarevac, Serbia <br>
-                                </p>
-                            </li>
-                            <li>
-                                <h4><span>2017 - 2022</span>&nbsp;Teacher</h4>
-                                <p>I was a teacher at a primary school in Serbia. The school is located near Belgrade.
-                                    <br>
-                                    <b>School</b> - <a href="https://www.osknezlazar.edu.rs/" target="_blank">OS Knez
-                                        Lazar</a> <br>
-                                    <b>Duration</b> - Sep 2017 - present <br>
-                                    <b>Location</b> - Lazarevac, Serbia <br>
-                                </p>
-                            </li>
-                        </ul>
-                        <div class="other">
-                            <li>
-                                <h4 class="text-center"><span>Other/Hobbies </span></h4>
-                                <p>Speaking of hobbies, I have many of them's, but the hobby I love the most is playing
-                                    the keyboards. Also, I play guitar and flute. In music school Stanislav Binicki I
-                                    improved my piano skills and singing. In my free time, I'm going to the gym, watch
-                                    football, play video games, etc. <br>
-                                </p>
-                            </li>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6">
-                        <h3 class="text-center">My Education</h3>
-                        <ul class="timeline">
-                            <li>
-                                <h4><span>2021 -&nbsp;</span>ReactJS Developer</h4>
-                                <p>In this course, I became a ReactJS developer. Journey became with ES6 features,
-                                    JSX, React Hooks, reusable components, and conditional rendering. My hosted projects
-                                    can be found
-                                    <a href="https://nikola93kg.github.io/projects-web.html" target="_blank">here</a>
-                                    <br>
-                                    <b>Institute</b> - <a href="https://www.itoip.rs/" target="_blank">IT OIP</a> <br>
-                                    <b>Duration</b> - Mar 2019 - Jan 2020 <br>
-                                    <b>Location</b> Belgrade, Serbia <br>
-                                </p>
-                            </li>
-                            <li>
-                                <h4><span>2018 -&nbsp;</span>Web Developer</h4>
-                                <p>In this course, I became a full-stack web developer. Journey became with HTML 5,
-                                    CSS3, jS, jQuery, and AJAX. Then it continues with MYSQL, PHP7 with object-oriented
-                                    programming with secure and clean code. My last project includes a message system
-                                    which you can see when you <a href="https://github.com/nikola93kg/message_system"
-                                        target="_blank"> click here</a>
-                                    on my GitHub profile. <br>
-                                    <b>Institute</b> - <a href="https://www.itoip.rs/" target="_blank">IT OIP</a> <br>
-                                    <b>Duration</b> - Mar 2019 - Jan 2020 <br>
-                                    <b>Location</b> Belgrade, Serbia <br>
-                                </p>
-                            </li>
-                            <li>
-                                <h4><span>2017 -&nbsp;</span> Master Theologian</h4>
-                                <p>Theological Master Program of Graduate Studies - Master Academic Studies is a one
-                                    year (two semesters) program carrying
-                                    60 ECTS credits, and on its successful completion, each prospective
-                                    candidate gains the title of Master Theologian. My work was about <a
-                                        href="misc/master_rad.docx" target="_blank">date calculations of Orthodox
-                                        Easter.</a><br>
-                                    <b>University</b> - <a href="https://bfspc.bg.ac.rs/" target="_blank">Faculty of
-                                        Orthodox Theology</a><br>
-                                    <b>Duration</b> - Oct 2017 - Sep 2019 <br>
-                                    <b>Location</b> - Belgrade, Serbia <br>
-                                </p>
-                            </li>
-                            <li>
-                                <h4><span>2012 -&nbsp;</span> Bachelor of Theology - Catechiser</h4>
-                                <p>Theological-Catechetical program of Undergraduate Studies enables the students to
-                                    research, communicate, and advance theology, especially within
-                                    educational-pedagogical activities, whilst encouraging creative dialogue between
-                                    theology and other complementary disciplines. Basic Academic Studies is a four-year
-                                    (eight semesters) program carrying 240 ECTS credits. On the completion of these
-                                    studies, candidates gain the title of Bachelor of Theology-Catechiser with Honors.
-                                    <br>
-                                    <b>University</b> - <a href="https://bfspc.bg.ac.rs/" target="_blank">Faculty of
-                                        Orthodox Theology</a> <br>
-                                    <b>Duration</b> - Oct 2012 - Avg 2017 <br>
-                                    <b>Location</b> - Belgrade, Serbia <br>
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="contact" id="contact">
-
-            <div class="container text-center">
-                <h1>Contact Me</h1>
-                <div class="row">
-                    <div class="col-md-4">
-                        <i class="fa fa-phone">
-                            <p> <a href="tel:{+381 64 300 5654}"> +381 64 300 5654 </a></p>
-                        </i>
-                    </div>
-                    <div class="col-md-4">
-                        <i class="fa fa-envelope">
-                            <p> <a href="mailto:markovic755@gmail.com">markovic755@gmail.com</a> </p>
-                        </i>
-                    </div>
-                </div>
-                <div class="social-container footer-social-container">
-                    <div class="social-buttons">
-                        <a href="https://www.facebook.com/14nikola14" target="_blank"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/14nikola14" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/nikola93kg/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://github.com/nikola93kg" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/nikola93kg" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <a href="misc/resume.pdf" target="_blank"><button type="button" class="btn btn-primary"><i
-                            class="fa fa-download"></i>Resume</button></a>
-                <a href="mailto:markovic755@gmail.com"><button type="button" class="btn btn-primary"><i
-                            class="fa fa-rocket"></i>Hire me</button></a>
-            </div>
-            <div class="footer text-center">
-                <p>&copy; Copyright - Nikola Markovic 2024.</p>
-            </div>
-        </div>
+      </div>
     </section>
-    <script src="smooth-scroll.js"></script>
-    <script>
-        let scroll = new SmoothScroll('a[href*="#"]');
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
-        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script>
-        $('.pause-btn').hide();
 
-        function playAudio() {
-            $('audio').trigger('play');
-            $('.play-btn').hide();
-            $('.pause-btn').show();
-        }
-        function pauseAudio() {
-            $('audio').trigger('pause');
-            $('.play-btn').show();
-            $('.pause-btn').hide();
-        }
-    </script>
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Career</span>
+          <h2 class="section__title">Work Experience</h2>
+        </div>
+
+        <div class="timeline">
+
+          <article class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div class="timeline__title-group">
+                  <h3 class="timeline__role">Frontend Developer</h3>
+                  <a class="timeline__company" href="https://www.engserbia.com/" target="_blank" rel="noopener">Engineering Software Lab Serbia</a>
+                </div>
+                <div class="timeline__meta">
+                  <span class="timeline__period">08/2022 – Present</span>
+                  <span class="timeline__location">Belgrade, Serbia</span>
+                </div>
+              </div>
+
+              <div class="exp__project">
+                <div class="exp__project-header">
+                  <span class="exp__project-badge">Project</span>
+                  <h4 class="exp__project-name">Telepass — EVF/EVO Enterprise Invoicing Platform</h4>
+                </div>
+                <p class="exp__project-desc">Contributed to a large-scale enterprise invoicing system for Telepass, Italy's leading mobility and payment platform. Worked within a cross-functional team on PDF/XML document workflows, batch invoice processing, and technical analysis of complex business rules across a Java/DB2/GWT stack.</p>
+                <div class="exp__tags">
+                  <span>Java 8</span><span>DB2 SQL</span><span>MyBatis XML</span><span>Maven</span>
+                  <span>JBoss EAP</span><span>Docker</span><span>GitLab CI/CD</span><span>GWT</span>
+                </div>
+              </div>
+
+              <div class="exp__project">
+                <div class="exp__project-header">
+                  <span class="exp__project-badge">Project</span>
+                  <h4 class="exp__project-name">ICOS — Intelligent Continuum Orchestration System</h4>
+                </div>
+                <p class="exp__project-desc">Built and maintained the frontend of a cloud-edge-IoT policy management platform. Developed a Dynamic Policy Manager with RBAC, integrating Keycloak authentication, REST APIs, and real-time data visualisation. Collaborated with DevOps on Kubernetes/Helm-based deployments.</p>
+                <div class="exp__tags">
+                  <span>React.js</span><span>Material UI</span><span>TypeScript</span><span>Keycloak</span>
+                  <span>Axios</span><span>Docker</span><span>Kubernetes</span><span>Helm</span><span>RBAC</span>
+                </div>
+              </div>
+
+              <div class="exp__project">
+                <div class="exp__project-header">
+                  <span class="exp__project-badge">Project</span>
+                  <h4 class="exp__project-name">Esselunga — Retail Platform</h4>
+                </div>
+                <p class="exp__project-desc">Delivered features for a retail-facing platform including a drag-and-drop image analyser, multilingual UI, and SASS-driven component improvements across React and legacy Java/GWT layers.</p>
+                <div class="exp__tags">
+                  <span>React.js</span><span>Java</span><span>GWT</span><span>SASS</span><span>i18n</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal reveal--delay-1">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div class="timeline__title-group">
+                  <h3 class="timeline__role">Frontend Developer — Freelance</h3>
+                  <span class="timeline__company timeline__company--solo">Independent</span>
+                </div>
+                <div class="timeline__meta">
+                  <span class="timeline__period">10/2019 – Present</span>
+                  <span class="timeline__location">Remote</span>
+                </div>
+              </div>
+              <p class="timeline__summary">End-to-end web projects for clients across Serbia, Spain, and remotely — from initial brief to production deployment.</p>
+              <ul class="timeline__list">
+                <li>Responsive websites and web apps with mobile-first UI/UX</li>
+                <li>Custom WordPress themes and WooCommerce integrations</li>
+                <li>Headless frontends with Next.js and React</li>
+                <li>CMS setup, content migrations, and Squarespace Commerce</li>
+                <li>Performance auditing, Core Web Vitals improvements, SEO</li>
+                <li>GA4 configuration and conversion tracking</li>
+              </ul>
+              <div class="exp__tags">
+                <span>WordPress</span><span>Next.js</span><span>React.js</span>
+                <span>HTML/CSS/JS</span><span>WooCommerce</span><span>GA4</span><span>SEO</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal reveal--delay-2">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div class="timeline__title-group">
+                  <h3 class="timeline__role">Frontend Developer</h3>
+                  <a class="timeline__company" href="https://www.youtestme.com/" target="_blank" rel="noopener">YouTestMe</a>
+                </div>
+                <div class="timeline__meta">
+                  <span class="timeline__period">09/2020 – 08/2021</span>
+                  <span class="timeline__location">Belgrade, Serbia</span>
+                </div>
+              </div>
+              <p class="timeline__summary">Contributed to the GetCertified e-learning platform — enterprise software for secure test management, item authoring, and advanced reporting.</p>
+              <ul class="timeline__list">
+                <li>Bug fixing and QA ticket resolution across the UI layer</li>
+                <li>SASS theming and component styling improvements</li>
+                <li>JSF PrimeFaces component adjustments and Java 8 UI updates</li>
+                <li>SVN-based code collaboration and SSH server debugging</li>
+                <li>WordPress platform customisation and maintenance</li>
+              </ul>
+              <div class="exp__tags">
+                <span>WordPress</span><span>Java 8</span><span>JSF PrimeFaces</span>
+                <span>SASS</span><span>SVN</span><span>SSH</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal reveal--delay-3">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div class="timeline__title-group">
+                  <h3 class="timeline__role">Image Annotator</h3>
+                  <a class="timeline__company" href="https://www.imageannotation.ai/" target="_blank" rel="noopener">Microwork.io</a>
+                </div>
+                <div class="timeline__meta">
+                  <span class="timeline__period">09/2018 – 05/2019</span>
+                  <span class="timeline__location">Remote — San Jose, CA</span>
+                </div>
+              </div>
+              <p class="timeline__summary">High-precision image segmentation and tagging for deep learning and computer vision training datasets. Photoshop-based masking workflows with a focus on labelling accuracy and consistency at scale.</p>
+              <div class="exp__tags">
+                <span>Adobe Photoshop</span><span>Image Segmentation</span><span>ML Datasets</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Stack</span>
+          <h2 class="section__title">Skills &amp; Technologies</h2>
+        </div>
+        <div class="skills__grid">
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Frontend
+            </h3>
+            <div class="skill-group__tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span>
+              <span>TypeScript</span><span>React.js</span><span>Next.js</span>
+              <span>Redux</span><span>Material UI</span><span>Tailwind CSS</span><span>SASS/SCSS</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal--delay-1">
+            <h3 class="skill-group__title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              Backend &amp; Data
+            </h3>
+            <div class="skill-group__tags">
+              <span>Java</span><span>Spring Boot</span><span>SQL</span>
+              <span>PostgreSQL</span><span>DB2</span><span>MyBatis</span>
+              <span>REST API</span><span>Supabase</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal--delay-2">
+            <h3 class="skill-group__title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              Tools &amp; DevOps
+            </h3>
+            <div class="skill-group__tags">
+              <span>Git</span><span>GitHub</span><span>GitLab</span>
+              <span>Docker</span><span>Podman</span><span>Kubernetes</span>
+              <span>Helm</span><span>WSL2</span><span>Linux</span><span>Bash</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal--delay-3">
+            <h3 class="skill-group__title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              CMS, Commerce &amp; Design
+            </h3>
+            <div class="skill-group__tags">
+              <span>WordPress</span><span>WooCommerce</span><span>Squarespace</span>
+              <span>Adobe Photoshop</span><span>Figma</span><span>GA4</span>
+              <span>SEO</span><span>Core Web Vitals</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__inner reveal">
+          <div class="section__label">Contact</div>
+          <h2 class="contact__title">Let's build something together.</h2>
+          <p class="contact__sub">
+            Open to frontend roles, contract work, and freelance collaborations.
+            If you have an interesting project or opportunity, I'd love to hear about it.
+          </p>
+          <div class="contact__links">
+            <a class="contact__item" href="mailto:markovic755@gmail.com">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              markovic755@gmail.com
+            </a>
+            <a class="contact__item" href="tel:+381643005654">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+              +381 64 300 5654
+            </a>
+            <a class="contact__item" href="https://linkedin.com/in/nikola93kg" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              linkedin.com/in/nikola93kg
+            </a>
+            <a class="contact__item" href="https://github.com/nikola93kg" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              github.com/nikola93kg
+            </a>
+          </div>
+          <div class="contact__ctas">
+            <a class="btn btn--accent" href="mailto:markovic755@gmail.com">Send me an email</a>
+            <a class="btn btn--ghost" href="misc/resume.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__copy">&copy; 2026 Nikola Markovic. All rights reserved.</span>
+      <div class="footer__socials">
+        <a href="https://github.com/nikola93kg" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/nikola93kg" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="back-to-top" href="#top" id="backToTop" aria-label="Back to top" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </a>
+
+  <script src="app.js"></script>
 </body>
-
 </html>

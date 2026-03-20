@@ -1,5 +1,8 @@
 .contact h1 {
   padding: 50px 0;
+  font-family: var(--font-heading, 'Archivo', sans-serif);
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 .contact {
   background-image: linear-gradient(

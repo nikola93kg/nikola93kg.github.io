@@ -1,8 +1,16 @@
 .resume {
   padding: 50px 0;
 }
+.resume h1 {
+  font-family: var(--font-heading, 'Archivo', sans-serif);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--color-dark, #18181B);
+}
 .resume h3 {
   margin-bottom: 50px;
+  font-family: var(--font-heading, 'Archivo', sans-serif);
+  font-weight: 600;
 }
 .timeline {
   list-style-type: none;

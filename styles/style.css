@@ -1,9 +1,35 @@
+/* ─── Design System Tokens (UI UX Pro Max — Portfolio) ── */
+:root {
+  --color-primary:       #2563EB;
+  --color-dark:          #18181B;
+  --color-dark-secondary:#3F3F46;
+  --color-bg:            #FAFAFA;
+  --color-text:          #09090B;
+  --color-cta:           #FF844B;
+  --color-cta-hover:     #e5703a;
+  --color-white:         #ffffff;
+
+  --font-heading: 'Archivo', sans-serif;
+  --font-body:    'Space Grotesk', sans-serif;
+  --font-brand:   'Sacramento', cursive;
+
+  --transition-fast: 150ms ease;
+  --transition-base: 280ms ease;
+  --transition-slow: 420ms ease;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+}
+
 * {
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--font-body);
 }
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 .separator {

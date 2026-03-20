@@ -14,13 +14,12 @@
 }
 .nav-logo p {
   font-size: 1.4em;
-  color: #fff;
-  transition: 0.4s ease;
   color: rgb(52, 152, 219);
+  transition: var(--transition-base, 280ms ease);
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0;
-  font-family: "Sacramento", cursive;
+  font-family: var(--font-brand, 'Sacramento', cursive);
 }
 .navbar-nav {
   float: right;
@@ -28,11 +27,15 @@
 }
 .nav-link {
   color: #fff;
-  transition: 0.4s;
+  font-family: var(--font-body, 'Space Grotesk', sans-serif);
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  transition: color var(--transition-base, 280ms ease), transform var(--transition-fast, 150ms ease);
+  cursor: pointer;
 }
 .nav-link:hover {
-  transform: scale(1.1);
-  color: #3498db;
+  transform: scale(1.08);
+  color: var(--color-primary, #2563EB);
 }
 .music {
   padding-left: 10px;
