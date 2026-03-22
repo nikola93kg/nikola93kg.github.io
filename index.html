@@ -22,6 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="styles/navbar.css">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-N3LTVWZHBP"></script>
   <script>
@@ -44,10 +45,10 @@
       <!-- Left: music + theme toggle -->
       <div class="nav__start">
         <div class="music-player" id="musicPlayer">
-          <button class="music-btn" id="musicPlay" onclick="playAudio()" aria-label="Play: Hungarian Dance No. 5 – Brahms" title="Hungarian Dance No. 5 · Brahms">
+          <button class="music-btn" id="musicPlay" aria-label="Play: Hungarian Dance No. 5 – Brahms" title="Hungarian Dance No. 5 · Brahms">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
           </button>
-          <button class="music-btn music-btn--pause" id="musicPause" onclick="pauseAudio()" aria-label="Pause music" style="display:none">
+          <button class="music-btn music-btn--pause" id="musicPause" aria-label="Pause music" style="display:none">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
           </button>
           <audio id="bgAudio" hidden>
@@ -88,19 +89,11 @@
 
       <div class="container hero__inner">
         <div class="hero__content">
-          <!-- <div class="hero__eyebrow reveal">
-            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
-            <span>Available for projects</span>
-          </div> -->
           <h1 class="hero__name hero__name--glitch reveal" data-text="Nikola Marković">Nikola Marković</h1>
           <p class="hero__role reveal reveal--delay-1">Frontend Developer</p>
           <p class="hero__tagline reveal reveal--delay-2">
             Building modern, scalable, and user-focused web applications —<br class="hero__br">
             from enterprise platforms to polished freelance products.
-          </p>
-          <p class="hero__sub reveal reveal--delay-3">
-            5+ years of professional experience with React, Next.js, TypeScript, and Material UI.
-            Enterprise-tested at Telepass and ICOS. Freelance-proven across 10+ client projects.
           </p>
           <div class="hero__actions reveal reveal--delay-4">
             <a class="btn btn--primary btn--glow" href="#projects">View Projects</a>
@@ -127,19 +120,19 @@
   name<span class="tok-p">:</span>       <span class="tok-s">'Nikola Marković'</span><span class="tok-p">,</span>
   role<span class="tok-p">:</span>       <span class="tok-s">'Frontend Developer'</span><span class="tok-p">,</span>
   location<span class="tok-p">:</span>   <span class="tok-s">'Belgrade, Serbia'</span><span class="tok-p">,</span>
-  experience<span class="tok-p">:</span> <span class="tok-m">5</span><span class="tok-p">,</span>  <span class="tok-c">// years</span>
-  stack<span class="tok-p">:</span> <span class="tok-p">[</span>
+  experience<span class="tok-p">:</span> <span class="tok-m">5+</span><span class="tok-p">,</span>  <span class="tok-c">// years</span>
+  mainStack<span class="tok-p">:</span> <span class="tok-p">[</span>
     <span class="tok-s">'React'</span><span class="tok-p">,</span>
     <span class="tok-s">'Next.js'</span><span class="tok-p">,</span>
     <span class="tok-s">'TypeScript'</span><span class="tok-p">,</span>
-    <span class="tok-s">'Node.js'</span><span class="tok-p">,</span>
+    <span class="tok-s">'Material UI'</span><span class="tok-p">,</span>
   <span class="tok-p">],</span>
   enterprise<span class="tok-p">:</span> <span class="tok-p">[</span>
     <span class="tok-s">'Telepass'</span><span class="tok-p">,</span>
     <span class="tok-s">'ICOS'</span><span class="tok-p">,</span>
     <span class="tok-s">'Esselunga'</span><span class="tok-p">,</span>
   <span class="tok-p">],</span>
-  freelance<span class="tok-p">:</span>   <span class="tok-m">14</span><span class="tok-p">,</span> <span class="tok-c">// client sites</span>
+  freelance<span class="tok-p">:</span>   <span class="tok-m">14+</span><span class="tok-p">,</span> <span class="tok-c">// client sites</span>
   openTo<span class="tok-p">:</span>     <span class="tok-kc">true</span><span class="tok-p">,</span>
 <span class="tok-p">};</span>
 
@@ -172,7 +165,7 @@
 
           <!-- Content column -->
           <div class="about__content">
-            <div class="section__header reveal" style="margin-bottom:var(--sp-6)">
+            <div class="section__header reveal">
               <span class="section__label">About</span>
               <h2 class="section__title">Professional Summary</h2>
             </div>
@@ -229,7 +222,7 @@
               <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2026/03/Screenshot-2026-03-12-095334.png" alt="Ilić Enterijer website" loading="lazy">
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">NextJS</span></div>
+              <div class="pcard__meta"><span class="pcard__tag">Craftman</span></div>
               <h3 class="pcard__title">Ilić Enterijer</h3>
               <p class="pcard__desc">Interior design studio showcase with a curated portfolio gallery, service pages, and contact form. Clean aesthetic aligned with the brand identity.</p>
               <div class="pcard__stack">NextJS · React · Vercel · Tailwind · Custom CSS · Responsive</div>
@@ -245,7 +238,7 @@
               <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2026/03/Screenshot-2026-03-12-095240.png" alt="OŠ Dule Karaklajić website" loading="lazy">
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Education</span></div>
+              <div class="pcard__meta"><span class="pcard__tag">Education</span></div>
               <h3 class="pcard__title">OŠ Dule Karaklajić</h3>
               <p class="pcard__desc">Official website for an elementary school. Structured information architecture, news feed, event calendar, and a responsive layout for parents and students.</p>
               <div class="pcard__stack">WordPress · Elementor · Custom CSS · Responsive</div>
@@ -261,7 +254,7 @@
               <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/02/Screenshot-2025-07-13-222405.png" alt="Časovi Francuskog – Belle Époque website" loading="lazy">
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Education</span></div>
+              <div class="pcard__meta"><span class="pcard__tag">Education</span></div>
               <h3 class="pcard__title">Časovi Francuskog – Belle Époque</h3>
               <p class="pcard__desc">French language tutoring service website. Elegant Parisian aesthetic, structured lesson overview, tutor profile section, and a booking inquiry form.</p>
               <div class="pcard__stack">Wordpress · CSS · JavaScript · Elementor</div>
@@ -277,7 +270,7 @@
               <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/12/Screenshot-2025-12-28-234830.png" alt="Powder Brows Vienna website" loading="lazy">
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Beauty</span></div>
+              <div class="pcard__meta"><span class="pcard__tag">Beauty</span></div>
               <h3 class="pcard__title">Powder Brows Vienna</h3>
               <p class="pcard__desc">Premium beauty salon website targeting Austrian clients. Elegant layout featuring service gallery, pricing packages, and a conversion-focused booking CTA.</p>
               <div class="pcard__stack">NextJS · React · TypeScript · Vercel</div>
@@ -293,7 +286,7 @@
               <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/12/Screenshot-2025-12-15-223234.png" alt="Tripoli Sweets website" loading="lazy">
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Food &amp; Beverage</span></div>
+              <div class="pcard__meta"><span class="pcard__tag">Food &amp; Beverage</span></div>
               <h3 class="pcard__title">Tripoli Sweets</h3>
               <p class="pcard__desc">Confectionery brand website with a visual-heavy product showcase, menu section, and multilingual considerations designed for a Middle Eastern market.</p>
               <div class="pcard__stack">WordPress · CSS · JavaScript · HTML</div>
@@ -309,7 +302,7 @@
               <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/12/Screenshot-2025-12-15-145503.png" alt="Frankultura website" loading="lazy">
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Events</span></div>
+              <div class="pcard__meta"><span class="pcard__tag">Education</span></div>
               <h3 class="pcard__title">Frankultura</h3>
               <p class="pcard__desc">Cultural organisation website with event listings, gallery, and community engagement sections. Localised content and design for a Serbian audience.</p>
               <div class="pcard__stack">WordPress · Custom CSS · JavaScript</div>
@@ -325,7 +318,7 @@
               <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/10/Screenshot-2025-10-29-214811.png" alt="CoolFridgeGuys website" loading="lazy">
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Service</span></div>
+              <div class="pcard__meta"><span class="pcard__tag">Service</span></div>
               <h3 class="pcard__title">CoolFridgeGuys</h3>
               <p class="pcard__desc">Home appliance repair service landing page. Service area coverage, instant quote form, testimonials section, and local SEO trust signals.</p>
               <div class="pcard__stack">NextJS · React · TypeScript · Vercel · Squarespace</div>
@@ -342,7 +335,7 @@
             </div>
             <div class="pcard__body">
               <div class="pcard__meta">
-                <span class="pcard__tag">Freelance</span>
+                
                 <span class="pcard__tag">Renovation</span>
               </div>
               <h3 class="pcard__title">LaDekor</h3>
@@ -360,7 +353,7 @@
               <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/07/Screenshot-2025-07-13-220155.png" alt="Anabela Bebi Oprema website" loading="lazy">
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">E-commerce</span></div>
+              <div class="pcard__meta"><span class="pcard__tag">E-commerce</span></div>
               <h3 class="pcard__title">Anabela Bebi Oprema</h3>
               <p class="pcard__desc">Baby equipment e-commerce store with a full product catalogue, category filtering, and an optimised checkout flow. Mobile-first and SEO-focused.</p>
               <div class="pcard__stack">WordPress · WooCommerce · SEO · CSS</div>
@@ -376,7 +369,7 @@
               <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/02/Screenshot-2023-09-17-224102.png" alt="Madjionicar Bojan website" loading="lazy">
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Landing Page</span></div>
+              <div class="pcard__meta"><span class="pcard__tag">Landing Page</span></div>
               <h3 class="pcard__title">Madjionicar Bojan</h3>
               <p class="pcard__desc">Entertainment landing page for a professional magician. Dramatic visual design, event booking section, gallery integration, and fast static deployment on Netlify.</p>
               <div class="pcard__stack">NextJS · Tailwind · TypeScript · Hostinger</div>
@@ -392,7 +385,7 @@
               <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/02/Screenshot-2024-11-28-124355.png" alt="Banquetes Castellanos Zoreda website" loading="lazy">
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Landing Page</span></div>
+              <div class="pcard__meta"><span class="pcard__tag">Landing Page</span></div>
               <h3 class="pcard__title">Banquetes Castellanos Zoreda</h3>
               <p class="pcard__desc">Mexiacn banqueting venue website with gallery, multilingual support, booking CTA, and a strong visual identity aligned with the brand.</p>
               <div class="pcard__stack">HTML · CSS · JavaScript · Netlify</div>
@@ -408,7 +401,7 @@
               <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/02/Screenshot-1.png" alt="Nest Home Solutions website" loading="lazy">
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Service</span></div>
+              <div class="pcard__meta"><span class="pcard__tag">Service</span></div>
               <h3 class="pcard__title">Nest Home Solutions</h3>
               <p class="pcard__desc">Home improvement and renovation services landing page. Project gallery, service breakdown, client testimonials, and a local contact form for lead generation.</p>
               <div class="pcard__stack">ReactJS · CSS · Github</div>
@@ -424,7 +417,7 @@
               <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/02/Screenshot-2023-09-17-222143.png" alt="Stamenko Milic Photography website" loading="lazy">
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">Photography</span></div>
+              <div class="pcard__meta"><span class="pcard__tag">Photography</span></div>
               <h3 class="pcard__title">Stamenko Milic Photography</h3>
               <p class="pcard__desc">Premium photography portfolio and booking site. Large-format visuals, minimal UI, and conversion-oriented layout targeting wedding and portrait clients.</p>
               <div class="pcard__stack">HTML · CSS · JavaScript · Pixieset</div>
@@ -440,7 +433,7 @@
               <img class="pcard__img" src="https://nmarkdesigns.com/wp-content/uploads/2025/02/Screenshot-2024-11-28-124148.png" alt="DH Travel website" loading="lazy">
             </div>
             <div class="pcard__body">
-              <div class="pcard__meta"><span class="pcard__tag">Freelance</span><span class="pcard__tag">WordPress</span></div>
+              <div class="pcard__meta"><span class="pcard__tag">WordPress</span></div>
               <h3 class="pcard__title">DH Travel</h3>
               <p class="pcard__desc">Corporate travel agency website with a custom WordPress theme. Fully responsive, mobile-first design with fast load times and structured SEO markup.</p>
               <div class="pcard__stack">WordPress · Custom CSS · Responsive · SEO</div>
